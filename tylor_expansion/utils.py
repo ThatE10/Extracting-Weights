@@ -75,11 +75,8 @@ def dim_selection(max_min_gap, select_dim_num, max_gap=15):
     else:
         approx_dim = std_sort_index[:select_dim_num]
         ffn_dim = std_sort_index[select_dim_num:]
-    # ffn_dim = torch.tensor(list(set(std_sort_index) - set(approx_dim)), device=approx_dim.device)
-    # print(max_min_gap[approx_dim])
-    # ipdb.set_trace()
 
-    return approx_dim, ffn_dim
+    return approx_dim, ffn_dim #approx_dim is a list of indices with the largest variance, and ffn_dim are the rest.
 
 
 def hiddenstates_benchmark(model, fname):
