@@ -7,7 +7,7 @@ We demonstrate that the [Taylor Unswift method](https://arxiv.org/pdf/2410.05331
 
 ---
 
-## 📖 Overview
+## Overview
 
 * **Taylor Unswift**: A technique that obfuscates the down-projection matrix $W_{d2}$ in Transformer MLPs by embedding it into a Taylor series expansion of the activation function.
 * **Our Contribution**: We show that this obfuscation is *reversible*. By rearranging the forward equations and applying the Moore–Penrose pseudoinverse, we can directly solve for $W_{d2}$.
@@ -18,7 +18,7 @@ We demonstrate that the [Taylor Unswift method](https://arxiv.org/pdf/2410.05331
 
 ---
 
-## 🚀 Features
+## Features
 
 * Implementation of the **forward obfuscated MLP** (Taylor Unswift).
 * Attack pipeline to **reconstruct weights** from input–output pairs.
@@ -27,7 +27,7 @@ We demonstrate that the [Taylor Unswift method](https://arxiv.org/pdf/2410.05331
 
 ---
 
-## 🔬 Method
+## Method
 
 The core recovery equation is:
 
@@ -46,7 +46,7 @@ This linear inversion bypasses the obfuscation and recovers the original $W_{d2}
 
 ---
 
-## 📊 Results
+## Results
 
 * Average entry-wise distance between recovered and original weights:
 
@@ -57,7 +57,7 @@ This linear inversion bypasses the obfuscation and recovers the original $W_{d2}
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 Extracting-Weights/
@@ -69,14 +69,14 @@ Extracting-Weights/
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 This code is released for **academic and research purposes only**.
 It is intended to evaluate the robustness of weight obfuscation methods and highlight potential vulnerabilities.
 
 ---
 
-## 📜 Citation
+## Citation
 
 If you use this work, please cite:
 
