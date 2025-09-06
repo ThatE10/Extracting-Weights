@@ -1,4 +1,4 @@
-# Extracting Weights: Breaking Taylor Unswift Obfuscation
+# Extracting Model Weights: Breaking Taylor Unswift Obfuscation
 
 This repository contains the implementation accompanying the paper:
 **“Extracting Original Weights Post-Model Obfuscation: An Attack on Taylor Unswift.”**
